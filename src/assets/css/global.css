@@ -18,3 +18,11 @@ h1 {
   font-size: 2rem;
   color: white;
 }
+
+.content-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px 16px;
+  background-color: #13135e;
+}

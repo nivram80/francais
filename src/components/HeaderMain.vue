@@ -1,6 +1,12 @@
 <template>
   <header class="main-header">
     <h1>Francais</h1>
+    <nav class="nav">
+      <ul>
+        <li><router-link to="/news">News</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+      </ul>
+    </nav>
   </header>
 </template>
 
