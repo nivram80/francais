@@ -9,8 +9,19 @@
 </template>
 
 <script>
+import { rml } from "../roomlio";
+
 export default {
   name: "Roomlio",
+  mounted() {
+    window.rmlCalls = window.rmlCalls || [];
+
+    rml("register", {
+      apiName: "register",
+      roomKey: "Todd_Nichols_new_room",
+      roomName: "Nuckles Inc",
+    });
+  },
 };
 </script>
 
