@@ -19,10 +19,25 @@ h1 {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .content-main {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 16px 16px;
   background-color: #13135e;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-body {
+  display: flex;
+  align-items: flex-start;
 }

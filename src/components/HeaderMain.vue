@@ -19,6 +19,7 @@ export default {
 <style scoped>
 .main-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 40px;
   padding: 8px 16px;
@@ -28,5 +29,20 @@ export default {
 h1 {
   text-transform: uppercase;
   color: darkred;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav li {
+  margin-left: 16px;
 }
 </style>

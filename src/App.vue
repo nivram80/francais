@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import "./roomlio";
 import HeaderMain from "./components/HeaderMain.vue";
 import ContentMain from "./components/ContentMain.vue";
 
