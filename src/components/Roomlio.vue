@@ -9,14 +9,25 @@
 </template>
 
 <script>
-import { rml } from "../roomlio";
-
 export default {
   name: "Roomlio",
   mounted() {
-    window.rmlCalls = window.rmlCalls || [];
+    if (!window.rmlLoaded) {
+      window.rmlLoaded = true;
+      window.rmlCalls = [];
 
-    rml("register", {
+      let rml = function rml() {
+        window.rmlCalls.push(arguments);
+      };
+
+      window.rml = rml;
+
+      let s = document.createElement("script");
+      s.setAttribute("src", "http://embed.roomlio-dev.com:5000/embed.js");
+      document.body.appendChild(s);
+    }
+
+    window.rml("register", {
       apiName: "register",
       roomKey: "Todd_Nichols_new_room",
       roomName: "Nuckles Inc",
